@@ -7,6 +7,8 @@
    <link rel="stylesheet" href="./emolyeepayrollstyle.css">
 </head>
 <body>
+            <!-- UC1-Employee Payroll App with logo -->
+            
     <header class ="header-content header">
         <div class="logo-content">
             <img src ="assets/images/logo.png" alt="">
@@ -15,6 +17,10 @@
                 <span class= "emp-text emp-payroll">Payroll</span>
             </div>
         </div>
+    </header>
+
+            <!-- UC2-Employee Payroll Form with Header and name -->
+
         <div class="form-content">
             <form class="form" action="#"
                 onsubmit="save();return false">
@@ -25,9 +31,10 @@
                     for="name">Name</label>
                 <input class="input" type="text" id ="name"
                         name="name" placeholder="Enter Your Name"
+                        required>
             </div>        
-        </form>
-    </div>
+      
+            <!-- UC3-Specify Profile picture to the Employee payroll App-->
 
     <div class="row-content">
         <label class="label text" for="profile">Profile image</label>
@@ -53,6 +60,10 @@
                 <img class="profile" id="image4" src="assets\profile-images\Ellipse -7.png">
             </label>
         </div>
+        </div>
+
+            <!-- UC4-Employee Payroll Form with gender ,department and salary Range -->
+
         <div class="row-content">
             <label class="label text" for="gender" =>Gender</label>
             <div>
@@ -79,10 +90,15 @@
         </div>
         <div class="row-content">
             <label class="label text" for="salary">Choose your salary</label>
+            <input class="salary" type="text" id ="salary"
+                        name="salary" placeholder="Enter Your salary">
             <input class="input" type="range" name="salary" id="salary" min="300000"
                     max="500000" step="100" value="400000">
             <output class="salary-output text" for="salary">400000</output>
         </div>
+
+        <!-- UC5-Employee Payroll form with start date-->
+
         <div class="row-content">
             <label class="label text" for="startDate">Start Date</label>
             <div>
@@ -152,6 +168,9 @@
                 </select>
             </div>
         </div>
+
+        <!-- UC-6 Ability to add Notes and Bitton -->
+
         <div class="row-content">
             <label class="label text" for="notes">Notes</label>
             <textarea name="Notes" id="notes" placeholder="" style="height: 100px"></textarea>
@@ -163,10 +182,10 @@
                 <button type="reset" class="resetButton button">Reset</button>
             </div>
         </div>
-    
     </div>
+</div>
 
-        
-    </header>
+</form>
+</div>
 </body>
 </html>
